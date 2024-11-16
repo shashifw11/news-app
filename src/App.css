@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  display: flex;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  width: 20%;
+  background: #f8f9fa;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar button {
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sidebar button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.content {
+  width: 80%;
+  overflow-y: auto;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.news-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.full-article {
+  padding: 20px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.full-article img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .home {
+      flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .sidebar {
+      width: 100%;
+  }
+
+  .content {
+      width: 100%;
   }
 }
