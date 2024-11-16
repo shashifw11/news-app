@@ -16,20 +16,6 @@ body {
   flex-direction: column;
 }
 
-.sidebar button {
-  padding: 10px;
-  margin: 5px 0;
-  border: none;
-  background: #fff;
-  cursor: pointer;
-  text-align: left;
-}
-
-.sidebar button.active {
-  background: #007bff;
-  color: #fff;
-}
-
 .content {
   width: 80%;
   overflow-y: auto;

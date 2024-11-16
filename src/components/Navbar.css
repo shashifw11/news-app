@@ -1,21 +1,5 @@
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    background-color: #1c1c1c; 
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  .hamburger-btn {
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .navbar-title {
-    font-size: 24px;
-    font-weight: bold;
-  }
+.navbar-title{
+   font-size: larger;
+   font-weight: 300;
+}
+

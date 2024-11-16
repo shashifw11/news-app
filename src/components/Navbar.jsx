@@ -7,7 +7,7 @@ const Navbar = ({ onToggleSidebar }) => {
       <button className="hamburger-btn" onClick={onToggleSidebar}>
         ☰
       </button>
-      <h1 className="navbar-title">News App</h1>
+      <h3 className="navbar-title">Menu</h3>
     </div>
   );
 };
