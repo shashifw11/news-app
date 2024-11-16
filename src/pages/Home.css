@@ -37,7 +37,6 @@
     left: 0;
   }
   
-  /* Overlay to close the sidebar */
   .sidebar-container .overlay {
     position: fixed;
     top: 0;
@@ -53,10 +52,10 @@
     display: block;
   }
   
-  /* Content styles */
   .content {
     margin-left: 0;
     padding: 20px;
     transition: margin-left 0.3s ease-in-out;
   }
+  
   
